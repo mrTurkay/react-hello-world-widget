@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Custom HTML Page</title>
+    <link rel="stylesheet" href="http://localhost:8080/assets/my-widget.css">
+    <script>
+        function loadWidget() {
+          const script = document.createElement('script');
+          script.type = 'module';
+          script.src = 'http://localhost:8080/assets/my-widget.js';
+          script.onload = () => initHelloWorldWidget('widget-container');
+          document.head.appendChild(script);
+        }
+  
+        window.addEventListener('load', loadWidget);
+      </script>
+      
+  </head>
+  <body>
+    <div id="widget-container"></div>
+
+    <h1>Welcome to My Custom HTML Page!</h1>
+    <p>This is a sample HTML content created just for you.</p>
+   
+   
+  </body>
+</html>

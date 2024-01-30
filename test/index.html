@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Custom HTML Page</title>
+    <script type="module" crossorigin src="/assets/my-widget.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/my-widget.css" />
+    <script>
+      window.addEventListener("load", () =>
+        initHelloWorldWidget("widget-container")
+      );
+    </script>
+  </head>
+  <body>
+    <div id="widget-container"></div>
+
+    <h1>Welcome to My Custom HTML Page!</h1>
+    <p>This is a sample HTML content created just for you.</p>
+  </body>
+</html>
